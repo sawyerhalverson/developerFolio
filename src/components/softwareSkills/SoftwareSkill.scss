@@ -1,31 +1,107 @@
 @import "../../_globalColor";
 
+/* Global styles for the skills section */
 .dev-icons {
   padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 0;
+  margin-top: 0;
   text-align: center;
 }
 
+/* Individual skill item */
 .software-skill-inline {
-  display: inline-block;
+  display: inline-flex; /* Use inline-flex for alignment */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align items horizontally */
   margin-right: 20px;
   margin-bottom: 20px;
+  position: relative; /* Relative positioning for hover effects */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding around each item */
+  text-align: center; /* Center align text */
 }
 
-.software-skill-inline > i {
-  color: $subTitle;
+
+/* Icon styling */
+.software-skill-inline > i,
+.software-skill-inline > img {
+  width: 50px; /* Adjust icon size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 5px; /* Space between icon and text */
 }
 
-.software-skill-inline > i:hover {
-  color: $skillsColor;
-}
+/* Text styling */
 .software-skill-inline > p {
-  color: $subTitle;
-  font-size: 10px;
+  margin: 0; /* Remove default margin */
+  font-size: 12px; /* Adjust font size */
+  color: $subTitle; /* Use predefined color */
 }
-.software-skill-inline > i:hover ~ p {
-  color: $skillsColor;
+
+/* Hover effect */
+.software-skill-inline:hover {
+  background-color: #f2f2f2; /* Light gray background on hover */
+}
+
+/* Icon-specific colors */
+.software-skill-inline > i.fab.fa-html5 {
+  color: #E44D26; /* HTML5 color */
+}
+
+.software-skill-inline > i.fab.fa-css3-alt {
+  color: #1572B6; /* CSS3 color */
+}
+
+.software-skill-inline > i.fab.fa-js {
+  color: #F0DB4F; /* JavaScript color */
+}
+
+.software-skill-inline > i.fab.fa-python {
+  color: #4B8BBE; /* Python color */
+}
+
+.software-skill-inline > i.fab.fa-react {
+  color: #61DAFB; /* React color */
+}
+
+.software-skill-inline > i.fab.fa-aws {
+  color: #FF9900; /* AWS color */
+}
+
+.software-skill-inline > i.fab.fa-swift {
+  color: #FFAC45; /* Swift color */
+}
+
+.software-skill-inline > i.fab.fa-node {
+  color: #68A063; /* Node.js color */
+}
+
+.software-skill-inline > i.fas.fa-database {
+  color: #007ACC; /* SQL Database color */
+}
+
+.software-skill-inline > i.fab.fa-docker {
+  color: #2496ED; /* Docker color */
+}
+
+/* Smooth hover animation for icon */
+.software-skill-inline > i,
+.software-skill-inline > img {
+  transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.software-skill-inline:hover > i,
+.software-skill-inline:hover > img {
+  transform: scale(1.2); /* Scale icon on hover */
+}
+
+/* Hover effect for text */
+.software-skill-inline > p {
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.software-skill-inline:hover > p {
+  color: $skillsColor; /* Change text color on hover */
 }
