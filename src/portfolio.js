@@ -30,6 +30,7 @@ I'm passionate about full stack development! I love learning, problem-solving, a
   resumeLink:
     "https://drive.google.com/file/d/1ccK2oR-c4KCj1SjRHLSiPkXspLVU1-Wc/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
+  
 };
 
 // Social Media Links

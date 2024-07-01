@@ -1,11 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./personalProjects.scss"; // Import your styles
 
 const Stuber = () => {
   return (
     <div className="project-container">
+      {/* Back Button */}
+      <Link to="/" className="back-button">
+        Go Back
+      </Link>
+
       {/* Title */}
-      <h1 className="project-title">Stuber Project</h1>
+      <h1 className="project-title">Stuber - Rideshare for Students</h1>
 
       {/* Project Details */}
       <div className="project-details">
@@ -13,49 +19,43 @@ const Stuber = () => {
         <div className="column">
           <h2 className="section-title">What It Is</h2>
           <p className="project-description">
-            Stuber is a full-stack web application that connects users with nearby restaurants offering exclusive discounts during off-peak hours.
+            Stuber is a full-stack web application designed as a rideshare service specifically for students, aiming to address the challenge of limited parking space on university campuses.
           </p>
         </div>
 
         {/* Right Column - Image */}
         <div className="column">
           <img
-            src="https://via.placeholder.com/400x300"
+            src="stuber2.png"
             alt="Screenshot of Stuber project"
             className="project-image"
           />
         </div>
       </div>
 
-      {/* Space */}
-      <div className="space"></div>
-
       {/* Technologies Used */}
       <div className="project-technologies">
         <h2 className="section-title">Technologies Used</h2>
         <p>
-          Built with: React, Node.js, Express, MongoDB, Bootstrap
-        </p>
-      </div>
-
-      {/* Space */}
-      <div className="space"></div>
-
-      {/* What I Learned */}
-      <div className="project-learned">
-        <h2 className="section-title">What I Learned</h2>
-        <p>
-          Through this project, I learned how to design and develop a full-stack web application from scratch, integrate third-party APIs for location services and payment processing, and manage user authentication and authorization securely.
+          Stuber was built with React for the frontend, Node.js and Express for the backend, and MySQL for the database. AWS was utilized for hosting the application and managing the database infrastructure.
         </p>
       </div>
 
       {/* Second Image */}
       <div className="project-media">
         <img
-          src="https://via.placeholder.com/400x300"
+          src="stuber1.png"
           alt="Another screenshot of Stuber project"
-          className="project-image"
+          className="project-image-large" // Apply a new class for larger image size
         />
+      </div>
+
+      {/* What I Learned */}
+      <div className="project-learned">
+        <h2 className="section-title">What I Learned</h2>
+        <p>
+          Through this project, I gained invaluable experience designing and developing a full-stack web application using React, Node.js, Express, MySQL, HTML, and CSS. Working under a tight deadline challenged me to refine my time management skills and prioritize tasks effectively. It was a rewarding journey that deepened my appreciation for solving real-world problems, particularly in creating user-friendly UI designs. Integrating third-party APIs like Mapbox for location services enriched my understanding of leveraging external tools to enhance application functionality.
+        </p>
       </div>
 
       {/* Video Walkthrough */}
@@ -66,11 +66,11 @@ const Stuber = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/your-video-id"
+            src="https://www.youtube.com/embed/10Jyx2HhcWQ"
             title="Stuber Project Video Walkthrough"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </div>
