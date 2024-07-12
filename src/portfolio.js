@@ -197,6 +197,7 @@ const workExperiences = {
       date: "May 2024 – August 2024",
       desc: "Developed a full-stack application with C# and Blazor for managing vast activity data from Garmin devices.",
       descBullets: [
+        "Optimized data stream for hundreds of terabytes of data.",
         "Built user interface for streamlined user interaction.",
         "Deployed on Microsoft Azure and IIS."
       ]
@@ -211,6 +212,7 @@ const workExperiences = {
       desc: "Developed multiple custom Apex applications in Salesforce, conducting rigorous QA testing for each.",
       descBullets: [
         "Managed cloud deployments from sandbox to production for enterprise-scale clients.",
+        "Performed 5 rounds of QA testing for each application"
       ]
         },
     {
@@ -220,7 +222,8 @@ const workExperiences = {
       date: "Apr 2022 – May 2023",
       desc: "Engineered Python-based data pipelines using APIs for efficient data transfer.",
       descBullets: [
-        "Maintained Snowflake database schema for extensive employee and transaction data."
+        "Maintained Snowflake database schema for extensive employee and transaction data.",
+        "Built custom React app for employee use in the field."
       ]
           }
   ]
@@ -253,7 +256,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/portol.png"),
+      image: require("./assets/images/finalportol.png"),
       projectName: "Portol",
       projectDesc: "Manage all your NFC tags.",
       footerLink: [
@@ -277,7 +280,7 @@ const bigProjects = {
     {
       image: require("./assets/images/lifepilot2.png"),
       projectName: "Lifepilot",
-      projectDesc: "Navigate Your Time.",
+      projectDesc: "Take control of your time.",
       footerLink: [
         {
           name: "See more",
