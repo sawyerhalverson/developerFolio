@@ -51,19 +51,65 @@ const Main = () => {
         ) : (
           <>
             <Header />
+            <br/>
+            <br/>
+
             <Greeting />
+            <br/>
+            <br/>
             <Skills />
+            <br/>
+            <br/>
+
             <StackProgress />
-            <Education />
+
+            <br/>
+            <br/>
+            <br/>
             <WorkExperience />
+            <br/>
+            <br/>
+            <br/>
             <Projects />
+            <br/>
+
+            <br/>
             <StartupProject />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <Education />
+            <br/>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
             <Achievement />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Blogs />
             <Talks />
             <Twitter />
             <Podcast />
             <Profile />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Footer />
             <ScrollToTopButton />
           </>

@@ -43,6 +43,8 @@
 .project-detail {
   text-align: center;
 }
+
+
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
 }
@@ -51,12 +53,13 @@
 }
 .project-image {
   position: relative;
-  height: 250px;
+  max-height: 200px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .projects-container {
   display: grid;

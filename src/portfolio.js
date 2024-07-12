@@ -241,47 +241,47 @@ const bigProjects = {
   subtitle: "Some of my favorite personal projects",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/stuberlogo.png"),
+      projectName: "Stuber",
+      projectDesc: "Rideshare app for students.",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "See more",
           url: "/stuber"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/portol.png"),
+      projectName: "Portol",
+      projectDesc: "Manage all your NFC tags.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "See more",
+          url: "/portol"
         }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/stretchifylogo.png"),
+      projectName: "Stretchify",
+      projectDesc: "Make stretching fun.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "See more",
+          url: "/stretchify"
         }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/lifepilot2.png"),
+      projectName: "Lifepilot",
+      projectDesc: "Navigate Your Time.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "See more",
+          url: "/lifepilot"
         }
       ]
     },
@@ -294,56 +294,48 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements And Certifications"),
+  // subtitle:
+  //   "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "AWS Certified Solutions Architect",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "",
+      image: require("./assets/images/awssalogo.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certification",
+          url: "https://drive.google.com/file/d/12em5Qw72J81Ri7OXvBqZQEDP2vGm6emD/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "BYU Sandbox Hackathon - First Place",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "",
+      image: require("./assets/images/sandboxlogo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Hackathon Project",
+          url: "https://www.youtube.com/watch?v=UQAv3xu3fVM"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Salesforce Admin & Platform App Builder",
+      subtitle: "",
+      image: require("./assets/images/sfreal.png"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        {name: "View Admin Certification", url: "https://drive.google.com/file/d/1QFlv5tcpyntlNLul09cd3Hs4khiS3Tgf/view?usp=sharing"},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View PAB Certification",
+          url: "https://drive.google.com/file/d/1QnCvHXIOVrUHRQLkZBVoUZwwSF0pZ8Wu/view?usp=sharing"
         }
       ]
     }
@@ -417,11 +409,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "",
+  // number: "+92-0000000000",
+  email_address: "shalverson321@gmail.com"
 };
 
 // Twitter Section
