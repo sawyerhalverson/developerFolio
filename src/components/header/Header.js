@@ -1,8 +1,9 @@
-import React, {useContext} from "react";
+import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
 import {
   greeting,
   workExperiences,
@@ -16,7 +17,7 @@ import {
 } from "../../portfolio";
 
 function Header() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -27,63 +28,63 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="/" className="logo">
+        <Link smooth to="/#/" className="logo"> {/* Use HashLink instead of <a> */}
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
-        </a>
+        </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <Link smooth to="/#/skills">Skills</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
 
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              <Link smooth to="/#/experience">Work Experiences</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a>
+              <Link smooth to="/#/opensource">Open Source</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
           {(
             <li>
-              <a href="#projects">Projects</a>
+              <Link smooth to="/#/projects">Projects</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
-                    {(
+          {(
             <li>
-              <a href="#education">Education</a>
+              <Link smooth to="/#/education">Education</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <Link smooth to="/#/achievements">Achievements</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a>
+              <Link smooth to="/#/blogs">Blogs</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a>
+              <Link smooth to="/#/talks">Talks</Link> {/* Adjusted to use HashLink */}
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+            <Link smooth to="/#/contact">Contact Me</Link> {/* Adjusted to use HashLink */}
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -96,4 +97,5 @@ function Header() {
     </Headroom>
   );
 }
+
 export default Header;
