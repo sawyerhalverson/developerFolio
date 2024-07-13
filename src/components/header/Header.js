@@ -3,6 +3,8 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+import { HashLink as Link } from 'react-router-hash-link';
+
 import {
   greeting,
   workExperiences,
