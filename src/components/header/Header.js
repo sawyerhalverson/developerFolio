@@ -3,7 +3,6 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
-import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
 import {
   greeting,
   workExperiences,
@@ -28,11 +27,11 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <Link smooth to="/#/" className="logo"> {/* Use HashLink instead of <a> */}
+        <a href="#/" className="logo"> {/* Standard anchor tag */}
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
-        </Link>
+        </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -44,47 +43,47 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <Link smooth to="/#/skills">Skills</Link> {/* Adjusted to use HashLink */}
+              <a href="#skills">Skills</a> {/* Anchor link */}
             </li>
           )}
 
           {viewExperience && (
             <li>
-              <Link smooth to="/#/experience">Work Experiences</Link> {/* Adjusted to use HashLink */}
+              <a href="#experience">Work Experiences</a> {/* Anchor link */}
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <Link smooth to="/#/opensource">Open Source</Link> {/* Adjusted to use HashLink */}
+              <a href="#opensource">Open Source</a> {/* Anchor link */}
             </li>
           )}
           {(
             <li>
-              <Link smooth to="/#/projects">Projects</Link> {/* Adjusted to use HashLink */}
+              <a href="#projects">Projects</a> {/* Anchor link */}
             </li>
           )}
           {(
             <li>
-              <Link smooth to="/#/education">Education</Link> {/* Adjusted to use HashLink */}
+              <a href="#education">Education</a> {/* Anchor link */}
             </li>
           )}
           {viewAchievement && (
             <li>
-              <Link smooth to="/#/achievements">Achievements</Link> {/* Adjusted to use HashLink */}
+              <a href="#achievements">Achievements</a> {/* Anchor link */}
             </li>
           )}
           {viewBlog && (
             <li>
-              <Link smooth to="/#/blogs">Blogs</Link> {/* Adjusted to use HashLink */}
+              <a href="#blogs">Blogs</a> {/* Anchor link */}
             </li>
           )}
           {viewTalks && (
             <li>
-              <Link smooth to="/#/talks">Talks</Link> {/* Adjusted to use HashLink */}
+              <a href="#talks">Talks</a> {/* Anchor link */}
             </li>
           )}
           <li>
-            <Link smooth to="/#/contact">Contact Me</Link> {/* Adjusted to use HashLink */}
+            <a href="#contact">Contact Me</a> {/* Anchor link */}
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
