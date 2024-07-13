@@ -250,7 +250,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "See more",
-          url: "/stuber"
+          url: "developerFolio/stuber"
         }
         //  you can add extra buttons here.
       ]
@@ -262,7 +262,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "See more",
-          url: "/portol"
+          url: "developerFolio/portol"
         }
       ]
     },
@@ -273,7 +273,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "See more",
-          url: "/stretchify"
+          url: "developerFolio/stretchify"
         }
       ]
     },
@@ -284,7 +284,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "See more",
-          url: "/lifepilot"
+          url: "developerFolio/lifepilot"
         }
       ]
     },

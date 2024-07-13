@@ -20,8 +20,6 @@ function App() {
           <Route path="/lifepilot" element={<LifePilot />} />
           <Route path="/stretchify" element={<Stretchify />} />
 
-
-
           {/* Define more routes as needed */}
         </Routes>
       </div>
