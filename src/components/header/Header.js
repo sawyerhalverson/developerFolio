@@ -29,11 +29,11 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="#/" className="logo"> {/* Standard anchor tag */}
+        <Link to="#/" className="logo"> {/* Use HashLink for internal navigation */}
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
-        </a>
+        </Link>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"
@@ -45,51 +45,47 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <Link to="/developerFolio/#skills">Skills</Link>
-
-              <a href="#skills">Skills</a> {/* Anchor link */}
+              <Link smooth to="#skills">Skills</Link>
             </li>
           )}
 
           {viewExperience && (
             <li>
-              <Link to="#experience">Your link text</Link>
-
-              <a href="#experience">Work Experiences</a> {/* Anchor link */}
+              <Link smooth to="#experience">Work Experiences</Link>
             </li>
           )}
           {viewOpenSource && (
             <li>
-              <a href="#opensource">Open Source</a> {/* Anchor link */}
+              <Link smooth to="#opensource">Open Source</Link>
             </li>
           )}
           {(
             <li>
-              <a href="#projects">Projects</a> {/* Anchor link */}
+              <Link smooth to="#projects">Projects</Link>
             </li>
           )}
           {(
             <li>
-              <a href="#education">Education</a> {/* Anchor link */}
+              <Link smooth to="#education">Education</Link>
             </li>
           )}
           {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a> {/* Anchor link */}
+              <Link smooth to="#achievements">Achievements</Link>
             </li>
           )}
           {viewBlog && (
             <li>
-              <a href="#blogs">Blogs</a> {/* Anchor link */}
+              <Link smooth to="#blogs">Blogs</Link>
             </li>
           )}
           {viewTalks && (
             <li>
-              <a href="#talks">Talks</a> {/* Anchor link */}
+              <Link smooth to="#talks">Talks</Link>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a> {/* Anchor link */}
+            <Link smooth to="#contact">Contact Me</Link>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
