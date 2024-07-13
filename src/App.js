@@ -11,7 +11,7 @@ import Stretchify from "./components/personalProjects/Stretchify";
 
 function App() {
   return (
-    <Router basename="/developerfolio">
+    <Router basename="/developerFolio">
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
